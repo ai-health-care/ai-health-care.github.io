@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 		<meta name="description" content="">
 		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+		<script src="jquery-3.5.1.min.js"></script>
 		<link href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" rel="stylesheet">
 		<meta property="og:title" content="AI-ready Health Care" />
 		<meta property="og:description" content="" />
@@ -18,6 +19,13 @@
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:title" content="hessian.AI health.care"/>
 		<meta name="twitter:description" content="The first hessian conference on AI-ready healthcare"/>
+		
+		<style type="text/css">
+			.wrapped {
+				height: 5em;
+				overflow: hidden;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -169,19 +177,19 @@
 			
 					<div class="tile is-child">
 						<div class="box">
-               <div class="columns is-mobile is-centered is-vcentered">
-                   <div class="column">
-                      <figure class="image is-128x128">
-                         <img class="is-rounded" src="images/kersting.jpg">
-                      </figure>
-                   </div>
-                                <div class="column">
-                                    <a name="Kersting"></a>
-                                    <h3 class="title">Kristian Kersting</h3>
-                                    <h4 class="subtitle">Technische Universität Darmstadt</h3>
-                                    <h4 class="subtitle"></h4>
-                                </div>
-                            </div>
+			   <div class="columns is-mobile is-centered is-vcentered">
+				   <div class="column">
+					  <figure class="image is-128x128">
+						 <img class="is-rounded" src="images/kersting.jpg">
+					  </figure>
+				   </div>
+								<div class="column">
+									<a name="Kersting"></a>
+									<h3 class="title">Kristian Kersting</h3>
+									<h4 class="subtitle">Technische Universität Darmstadt</h3>
+									<h4 class="subtitle"></h4>
+								</div>
+							</div>
 							<div class="content">
 								<hr>
 							</div>
@@ -190,37 +198,40 @@
 			
 					<div class="tile is-child">
 						<div class="box">
-                            <div class="columns is-mobile is-centered is-vcentered">
-                                <div class="column">
-                                    <figure class="image is-128x128">
-                                        <img class="is-rounded" src="images/tsaftaris.jpg">
-                                    </figure>
-                                </div>
-                                <div class="column">
-                                    <a name="Tsaftaris"></a>
-                                    <h3 class="title">Sotirios Tsaftaris</h3>
-                                    <h4 class="subtitle">University of Edinburgh</h3>
-                                    <h4 class="subtitle">Doing more with less by better data representations</h4>
-                                </div>
-                            </div>
-                            <div class="content">
-								Healthcare is under a perfect storm with AI/ML being offered as a solution to
-								relieve at least one bottleneck: data analysis. Indeed, the detection of disease,
-								segmentation of anatomy and other classical image analysis tasks, have seen
-								incredible improvements due to deep learning. Yet these advances need lots of
-								data: for every new task, new imaging scan, new hospital, more training data are needed.
-								Amongst the vast body of our work, for this talk, I will focus on learning better
-								representations and how they can help in addressing particular challenges healthcare
-								applications introduce. I will present a framework for several analysis tasks that
-								can do more (tasks) with less (need for annotated data). Within a multi-task learning
-								setting this framework benefits from trying to reconstruct the data and also taking
-								advantage of spatial and temporal correlation in imaging studies and from information
-								on biomarkers in health records (stored in PACS, EHR). I will then present our solution
-								to emulating how radiologists review images from the same patient exam. A solution
-								that learns to compare and combine information from images without need of registration
-								and slice pairing. Finally, time permitting, I will discuss how we can learn to predict
-								future health state in a proxy model of brain ageing without needing longitudinal data.
-								Applications in cardiovascular, brain, abdominal imaging will be shown.
+							<div class="columns is-mobile is-centered is-vcentered">
+								<div class="column">
+									<figure class="image is-128x128">
+										<img class="is-rounded" src="images/tsaftaris.jpg">
+									</figure>
+								</div>
+								<div class="column">
+									<a name="Tsaftaris"></a>
+									<h3 class="title">Sotirios Tsaftaris</h3>
+									<h4 class="subtitle">University of Edinburgh</h3>
+									<h4 class="subtitle">Doing more with less by better data representations</h4>
+								</div>
+							</div>
+							<div class="content">
+								<div class="wrapped">
+									Healthcare is under a perfect storm with AI/ML being offered as a solution to
+									relieve at least one bottleneck: data analysis. Indeed, the detection of disease,
+									segmentation of anatomy and other classical image analysis tasks, have seen
+									incredible improvements due to deep learning. Yet these advances need lots of
+									data: for every new task, new imaging scan, new hospital, more training data are needed.
+									Amongst the vast body of our work, for this talk, I will focus on learning better
+									representations and how they can help in addressing particular challenges healthcare
+									applications introduce. I will present a framework for several analysis tasks that
+									can do more (tasks) with less (need for annotated data). Within a multi-task learning
+									setting this framework benefits from trying to reconstruct the data and also taking
+									advantage of spatial and temporal correlation in imaging studies and from information
+									on biomarkers in health records (stored in PACS, EHR). I will then present our solution
+									to emulating how radiologists review images from the same patient exam. A solution
+									that learns to compare and combine information from images without need of registration
+									and slice pairing. Finally, time permitting, I will discuss how we can learn to predict
+									future health state in a proxy model of brain ageing without needing longitudinal data.
+									Applications in cardiovascular, brain, abdominal imaging will be shown.
+								</div>
+								<span class="more button">more</span>
 								<hr>
 								Prof. Sotirios A. Tsaftaris, or Sotos, (<a href="http://tsaftaris.com">tsaftaris.com</a>,
 								<a href="https://vios.science">vios.science</a>,
@@ -244,14 +255,17 @@
 								<a name="dosSantos"></a>
 								<h3 class="title">Daniel Pinto dos Santos</h3>
 								<h4 class="subtitle">A thousand words describe a picture – radiology reporting and AI</h4>
-								This talk will give a short introduction on how radiologists report on theradiological
-								exams and how they communicate their findings to the referring clinicians.
-								The advantages and pitfalls of narrative reporting in the context of clinical routine
-								and development of AI will be discussed as well as if and how structured reporting
-								could change that.
-								Some examples will be discussed to highlight how structured report data can be used
-								to develop AI algorithms and why there is a fundamental problem with "ground truth"
-								in radiology.
+								<div class="wrapped">
+									This talk will give a short introduction on how radiologists report on theradiological
+									exams and how they communicate their findings to the referring clinicians.
+									The advantages and pitfalls of narrative reporting in the context of clinical routine
+									and development of AI will be discussed as well as if and how structured reporting
+									could change that.
+									Some examples will be discussed to highlight how structured report data can be used
+									to develop AI algorithms and why there is a fundamental problem with "ground truth"
+									in radiology.
+								</div>
+								<span class="more button">more</span>
 								<hr>
 							</div>
 						</div>
@@ -346,5 +360,20 @@
 		
 		<footer class="footer is-light">
 		</footer>
+		
+			<script type="text/javascript">
+				$('.more').click(function(e) {
+						e.stopPropagation();
+						wrap = $(this).prev('div');
+						wrap.toggleClass('wrapped');
+						if (wrap.hasClass('wrapped')) {
+							$(this).text('more');
+						}
+						else {
+							$(this).text('less');
+						}
+				});
+			</script>
+		
 	</body>
 </html>
