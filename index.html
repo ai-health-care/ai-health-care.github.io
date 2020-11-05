@@ -406,39 +406,18 @@
 			</div>
 		</section>
 		
-		<div class="hero is-light">
-			<div class="hero-body">
-				<div class="container">
-					<p class="title">
-						Organization
-					</p>
-				</div>
-			</div>
-		</div>
-		
-		<section class="section">
-			<div class="container">
-				<div class="content">
-									</div>
-			</div>
-		</section>
-		
-		<footer class="footer is-light">
-		</footer>
-		
-			<script type="text/javascript">
-				$('.more').click(function(e) {
-						e.stopPropagation();
-						wrap = $(this).prev('div');
-						wrap.toggleClass('wrapped');
-						if (wrap.hasClass('wrapped')) {
-							$(this).text('more');
-						}
-						else {
-							$(this).text('less');
-						}
-				});
-			</script>
-		
+		<script type="text/javascript">
+			$('.more').click(function(e) {
+					e.stopPropagation();
+					wrap = $(this).prev('div');
+					wrap.toggleClass('wrapped');
+					if (wrap.hasClass('wrapped')) {
+						$(this).text('more');
+					}
+					else {
+						$(this).text('less');
+					}
+			});
+		</script>
 	</body>
 </html>
