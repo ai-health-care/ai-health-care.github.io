@@ -3651,3 +3651,15 @@ input, select, textarea {
 	margin-right: auto;
 	width: 50%;
 }
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+.flex-child {
+	width: 50%;
+	margin: auto;
+}
