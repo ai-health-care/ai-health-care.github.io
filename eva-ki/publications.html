@@ -17,57 +17,62 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header">
-						<h1><a href="index_de.html">EVA-KI</a></h1>
-						<nav class="links">
-							<ul>
-								<li><a href="partners.html">Partnern</a></li>
-								<li><a href="publications.html">Publikationen</a></li>
-							</ul>
-						</nav>
-						<nav class="main">
-							<ul>
-								<li class="menu">
-									<a class="fa-bars" href="#menu">Menu</a>
+				<header id="header">
+					<h1><a href="index_de.html">EVA-KI</a></h1>
+					<nav class="links">
+						<ul>
+							<li><a href="partners.html">Partnern</a></li>
+							<li><a href="publications.html">Publikationen</a></li>
+							<li><a href="press.html">Pressemitteilungen</a></li>
+						</ul>
+					</nav>
+					<nav class="main">
+						<ul>
+							<li class="menu">
+								<a class="fa-bars" href="#menu">Menu</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Menu -->
+				<section id="menu">
+
+					<!-- Links -->
+						<section>
+							<ul class="links">
+								<li>
+									<a href="index_de.html">
+										<h3>Home</h3>
+										<p>Die EVA-KI plattform</p>
+									</a>
+								</li>
+								<li>
+									<a href="partners.html">
+										<h3>Partnern</h3>
+										<p>Das Team hinter EVA-KI</p>
+									</a>
+								</li>
+								<li>
+									<a href="publications.html">
+										<h3>Publikationen</h3>
+										<p>Publikationen, die aus dem EVA-KI Projekt entstanden sind</p>
+									</a>
+								</li>
+								<li>
+									<a href="press.html">
+										<h3>Pressemitteilungen</h3>
+										<p>EVA-KI in der Öffentlichkeit.</p>
+									</a>
+								</li>
+								<li>
+									<a href="publications_en.html">
+										<h3>Englische Webseite</h3>
+									</a>
 								</li>
 							</ul>
-						</nav>
-					</header>
-
-				<!-- Menu -->
-					<section id="menu">
-
-						<!-- Links -->
-							<section>
-								<ul class="links">
-									<li>
-										<a href="index_de.html">
-											<h3>Home</h3>
-											<p>Die EVA-KI plattform</p>
-										</a>
-									</li>
-									<li>
-										<a href="partners.html">
-											<h3>Partnern</h3>
-											<p>Das Team hinter EVA-KI</p>
-										</a>
-									</li>
-									<li>
-										<a href="publications.html">
-											<h3>Publikationen</h3>
-											<p>Publikationen, die aus dem EVA-KI Projekt entstanden sind</p>
-										</a>
-									</li>
-									<li>
-										<a href="publications_en.html">
-											<h3>Englische Webseite</h3>
-										</a>
-									</li>
-								</ul>
-							</section>
-
-
-					</section>
+						</section>
+				</section>
 
 				<!-- Main -->
 					<div id="main">
@@ -80,7 +85,25 @@
 										<p>Publikationen, die aus dem EVA-KI Projekt entstanden sind.</p>
 									</div>
 								</header>
-								<a href="http://arxiv.org/abs/2010.11008">
+								<a href="https://arxiv.org/pdf/2107.05975.pdf">
+									<h3>
+										Detecting when pre-trained nnU-Net models fail silently for Covid-19 lung lesion segmentation
+									</h3>
+								</a>
+								<p>
+									Automatic segmentation of lung lesions in computer tomography has the potential to ease the burden of clinicians during the Covid-19 pandemic. Yet predictive deep learning models are not trusted in the clinical routine due to failing silently in out-of-distribution (OOD) data. We propose a lightweight OOD detection method that exploits the Mahalanobis distance in the feature space. The proposed approach can be seamlessly integrated into state-of-the-art segmentation pipelines without requiring changes in model architecture or training procedure, and can therefore be used to assess the suitability of pre-trained models to new data. We validate our method with a patch-based nnU-Net architecture trained with a multi-institutional dataset and find that it effectively detects samples that the model segments incorrectly. 
+								</p>
+								<hr>
+								<a href="https://openreview.net/pdf?id=E5CpgfwHBoC">
+									<h3>
+										Self-supervised Out-of-distribution Detection for Cardiac CMR Segmentation
+									</h3>
+								</a>
+								<p>
+									The segmentation of cardiac structures in Cine Magnetic Resonance imaging (CMR) plays an important role in monitoring ventricular function, and many deep learning solutions have been introduced that successfully automate this task. Yet due to variabilities in the CMR acquisition process, images from different centers or acquisition protocols differ considerably. This causes deep learning models to fail silently. It is therefore crucial to identify out-of-distribution (OOD) samples for which the trained model is unsuitable. For models with a self-supervised proxy task, we propose a simple method to identify OOD samples that does not require adapting the model architecture or access to a separate OOD dataset during training. As the performance of self-supervised tasks can be assessed without ground truth information, it indicates during test time when a sample differs from the training distribution. The proposed method combines a voxel-wise uncertainty estimate with the self-supervision information. Our approach is validated across three CMR datasets and two different proxy tasks. We find that it is more effective at detecting OOD samples than state-of-the-art post-hoc OOD detection and uncertainty estimation approaches.
+								</p>
+								<hr>
+								<a href="https://arxiv.org/pdf/2010.11008.pdf">
 									<h3>
 										What is Wrong with Continual Learning in Medical Image Segmentation?
 									</h3>
