@@ -10,6 +10,11 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			img {
+			  float: right;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -85,13 +90,24 @@
 										<p>Publikationen, die aus dem EVA-KI Projekt entstanden sind.</p>
 									</div>
 								</header>
+								<a href="https://arxiv.org/abs/2107.08751">
+									<h3>
+										Adversarial Continual Learning for Multi-Domain Hippocampal Segmentation
+									</h3>
+								</a>
+								<p>
+									<img src="images/papers/image_adversarial.PNG" style="width:347px;height:190px;margin-left:15px;"> 
+									<i>Accepted for MICCAI DART 2021</i> <br> Deep learning for medical imaging suffers from temporal and privacy-related restrictions on data availability. To still obtain viable models, continual learning aims to train in sequential order, as and when data is available. The main challenge that continual learning methods face is to prevent catastrophic forgetting, i.e., a decrease in performance on the data encountered earlier. This issue makes continuous training of segmentation models for medical applications extremely difficult. Yet, often, data from at least two different domains is available which we can exploit to train the model in a way that it disregards domain-specific information. We propose an architecture that leverages the simultaneous availability of two or more datasets to learn a disentanglement between the content and domain in an adversarial fashion. The domain-invariant content representation then lays the base for continual semantic segmentation. Our approach takes inspiration from domain adaptation and combines it with continual learning for hippocampal segmentation in brain MRI. We showcase that our method reduces catastrophic forgetting and outperforms state-of-the-art continual learning methods.
+								</p>
+								<hr>								
 								<a href="https://arxiv.org/pdf/2107.05975.pdf">
 									<h3>
 										Detecting when pre-trained nnU-Net models fail silently for Covid-19 lung lesion segmentation
 									</h3>
 								</a>
 								<p>
-									Automatic segmentation of lung lesions in computer tomography has the potential to ease the burden of clinicians during the Covid-19 pandemic. Yet predictive deep learning models are not trusted in the clinical routine due to failing silently in out-of-distribution (OOD) data. We propose a lightweight OOD detection method that exploits the Mahalanobis distance in the feature space. The proposed approach can be seamlessly integrated into state-of-the-art segmentation pipelines without requiring changes in model architecture or training procedure, and can therefore be used to assess the suitability of pre-trained models to new data. We validate our method with a patch-based nnU-Net architecture trained with a multi-institutional dataset and find that it effectively detects samples that the model segments incorrectly. 
+									<img src="images/papers/image_detecting.PNG" style="width:419px;height:191px;margin-left:15px;"> 
+									<i>Accepted for MICCAI 2021</i> <br> Automatic segmentation of lung lesions in computer tomography has the potential to ease the burden of clinicians during the Covid-19 pandemic. Yet predictive deep learning models are not trusted in the clinical routine due to failing silently in out-of-distribution (OOD) data. We propose a lightweight OOD detection method that exploits the Mahalanobis distance in the feature space. The proposed approach can be seamlessly integrated into state-of-the-art segmentation pipelines without requiring changes in model architecture or training procedure, and can therefore be used to assess the suitability of pre-trained models to new data. We validate our method with a patch-based nnU-Net architecture trained with a multi-institutional dataset and find that it effectively detects samples that the model segments incorrectly. 
 								</p>
 								<hr>
 								<a href="https://openreview.net/pdf?id=E5CpgfwHBoC">
@@ -100,7 +116,8 @@
 									</h3>
 								</a>
 								<p>
-									The segmentation of cardiac structures in Cine Magnetic Resonance imaging (CMR) plays an important role in monitoring ventricular function, and many deep learning solutions have been introduced that successfully automate this task. Yet due to variabilities in the CMR acquisition process, images from different centers or acquisition protocols differ considerably. This causes deep learning models to fail silently. It is therefore crucial to identify out-of-distribution (OOD) samples for which the trained model is unsuitable. For models with a self-supervised proxy task, we propose a simple method to identify OOD samples that does not require adapting the model architecture or access to a separate OOD dataset during training. As the performance of self-supervised tasks can be assessed without ground truth information, it indicates during test time when a sample differs from the training distribution. The proposed method combines a voxel-wise uncertainty estimate with the self-supervision information. Our approach is validated across three CMR datasets and two different proxy tasks. We find that it is more effective at detecting OOD samples than state-of-the-art post-hoc OOD detection and uncertainty estimation approaches.
+									<img src="images/papers/image_self.PNG" style="width:247px;height:216px;margin-left:15px;"> 
+									<i>MIDL 2021</i> <br> The segmentation of cardiac structures in Cine Magnetic Resonance imaging (CMR) plays an important role in monitoring ventricular function, and many deep learning solutions have been introduced that successfully automate this task. Yet due to variabilities in the CMR acquisition process, images from different centers or acquisition protocols differ considerably. This causes deep learning models to fail silently. It is therefore crucial to identify out-of-distribution (OOD) samples for which the trained model is unsuitable. For models with a self-supervised proxy task, we propose a simple method to identify OOD samples that does not require adapting the model architecture or access to a separate OOD dataset during training. As the performance of self-supervised tasks can be assessed without ground truth information, it indicates during test time when a sample differs from the training distribution. The proposed method combines a voxel-wise uncertainty estimate with the self-supervision information. Our approach is validated across three CMR datasets and two different proxy tasks. We find that it is more effective at detecting OOD samples than state-of-the-art post-hoc OOD detection and uncertainty estimation approaches.
 								</p>
 								<hr>
 								<a href="https://arxiv.org/pdf/2010.11008.pdf">
@@ -109,6 +126,7 @@
 									</h3>
 								</a>
 								<p>
+									<img src="images/papers/image_what.PNG" style="width:334px;height:170px;margin-left:15px;"> 
 									Continual learning protocols are attracting increasing attention from the medical imaging community. In a continual setup, data from different sources arrives sequentially and each batch is only available for a limited period. Given the inherent privacy risks associated with medical data, this setup reflects the reality of deployment for deep learning diagnostic radiology systems. Many techniques exist to learn continuously for classification tasks, and several have been adapted to semantic segmentation. Yet most have at least one of the following flaws: a) they rely too heavily on domain identity information during inference, or b) data as seen in early training stages does not profit from training with later data. In this work, we propose an evaluation framework that addresses both concerns, and introduce a fair multi-model benchmark. We show that the benchmark outperforms two popular continual learning methods for the task of T2-weighted MR prostate segmentation. 
 								</p>
 															
