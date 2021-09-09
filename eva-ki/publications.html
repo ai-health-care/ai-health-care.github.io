@@ -90,6 +90,32 @@
 										<p>Publikationen, die aus dem EVA-KI Projekt entstanden sind.</p>
 									</div>
 								</header>
+
+								<a>
+									<h3>
+										Continual Learning for Diagnostic Radiology
+									</h3>
+								</a>
+								<p>
+									<img src="images/papers/continual_learning.PNG" style="width:354px;height:175px;margin-left:15px;"> 
+									<i>Angenommen für RSNA 2021</i> <br> The exhibit provides an overview of continual learning, the practice of training deep learning models with a sequence of distinct tasks, for diagnostic radiology. Continual learning is a major paradigm shift which the FDA is actively working to regulate. In diagnostic radiology, where a variety of scanners and acquisition protocols are used, training continuously allows to leverage heterogeneous data sources while adhering to data protection constraints. We start by describing why it is often necessary to train models continuously in the clinical practice and how continual learning differs from the static learning setup used in most deep learning evaluations. To illustrate the challenges and opportunities that continual learning poses, we clarify the concepts of catastrophic forgetting and transferability, as well as summarize current regulatory efforts.									
+								</p>
+								<hr>
+
+								<a href="https://arxiv.org/pdf/2109.01668.pdf">
+									<h3>
+										How Reliable Are Out-of-Distribution Generalization Methods for Medical Image Segmentation?
+									</h3>
+								</a>
+								<p>
+									<img src="images/papers/domain_pred_network.PNG" style="width:440px;height:242px;margin-left:15px;"> 
+									<i>Angenommen für GCPR 2021</i> <br> The recent achievements of Deep Learning rely on the test data being similar in distribution to the training data. In an ideal case, Deep Learning models would achieve Out-of-Distribution (OoD) Generalization, i.e. reliably make predictions on out-of-distribution data. Yet in practice, models usually fail to generalize well when facing a shift in distribution. Several methods were thereby designed to improve the robustness of the features learned by a model through Regularization- or Domain-Prediction-based schemes. In this work, we evaluate OoD Generalization solutions for the problem of hippocampus segmentation in MR data using both fully- and semi-supervised training. We find that no method performs reliably in all experiments. Only the V-REx loss stands out as it remains easy to tune, while it outperforms a standard U-Net in most cases.
+								</p>
+								<hr>
+
+
+
+
 								<a href="https://arxiv.org/abs/2107.08751">
 									<h3>
 										Adversarial Continual Learning for Multi-Domain Hippocampal Segmentation
@@ -97,7 +123,7 @@
 								</a>
 								<p>
 									<img src="images/papers/image_adversarial.PNG" style="width:347px;height:190px;margin-left:15px;"> 
-									<i>Accepted for MICCAI DART 2021</i> <br> Deep learning for medical imaging suffers from temporal and privacy-related restrictions on data availability. To still obtain viable models, continual learning aims to train in sequential order, as and when data is available. The main challenge that continual learning methods face is to prevent catastrophic forgetting, i.e., a decrease in performance on the data encountered earlier. This issue makes continuous training of segmentation models for medical applications extremely difficult. Yet, often, data from at least two different domains is available which we can exploit to train the model in a way that it disregards domain-specific information. We propose an architecture that leverages the simultaneous availability of two or more datasets to learn a disentanglement between the content and domain in an adversarial fashion. The domain-invariant content representation then lays the base for continual semantic segmentation. Our approach takes inspiration from domain adaptation and combines it with continual learning for hippocampal segmentation in brain MRI. We showcase that our method reduces catastrophic forgetting and outperforms state-of-the-art continual learning methods.
+									<i>Angenommen für MICCAI DART 2021</i> <br> Deep learning for medical imaging suffers from temporal and privacy-related restrictions on data availability. To still obtain viable models, continual learning aims to train in sequential order, as and when data is available. The main challenge that continual learning methods face is to prevent catastrophic forgetting, i.e., a decrease in performance on the data encountered earlier. This issue makes continuous training of segmentation models for medical applications extremely difficult. Yet, often, data from at least two different domains is available which we can exploit to train the model in a way that it disregards domain-specific information. We propose an architecture that leverages the simultaneous availability of two or more datasets to learn a disentanglement between the content and domain in an adversarial fashion. The domain-invariant content representation then lays the base for continual semantic segmentation. Our approach takes inspiration from domain adaptation and combines it with continual learning for hippocampal segmentation in brain MRI. We showcase that our method reduces catastrophic forgetting and outperforms state-of-the-art continual learning methods.
 								</p>
 								<hr>								
 								<a href="https://arxiv.org/pdf/2107.05975.pdf">
@@ -107,7 +133,7 @@
 								</a>
 								<p>
 									<img src="images/papers/image_detecting.PNG" style="width:419px;height:191px;margin-left:15px;"> 
-									<i>Accepted for MICCAI 2021</i> <br> Automatic segmentation of lung lesions in computer tomography has the potential to ease the burden of clinicians during the Covid-19 pandemic. Yet predictive deep learning models are not trusted in the clinical routine due to failing silently in out-of-distribution (OOD) data. We propose a lightweight OOD detection method that exploits the Mahalanobis distance in the feature space. The proposed approach can be seamlessly integrated into state-of-the-art segmentation pipelines without requiring changes in model architecture or training procedure, and can therefore be used to assess the suitability of pre-trained models to new data. We validate our method with a patch-based nnU-Net architecture trained with a multi-institutional dataset and find that it effectively detects samples that the model segments incorrectly. 
+									<i>Angenommen für MICCAI 2021</i> <br> Automatic segmentation of lung lesions in computer tomography has the potential to ease the burden of clinicians during the Covid-19 pandemic. Yet predictive deep learning models are not trusted in the clinical routine due to failing silently in out-of-distribution (OOD) data. We propose a lightweight OOD detection method that exploits the Mahalanobis distance in the feature space. The proposed approach can be seamlessly integrated into state-of-the-art segmentation pipelines without requiring changes in model architecture or training procedure, and can therefore be used to assess the suitability of pre-trained models to new data. We validate our method with a patch-based nnU-Net architecture trained with a multi-institutional dataset and find that it effectively detects samples that the model segments incorrectly. 
 								</p>
 								<hr>
 								<a href="https://openreview.net/pdf?id=E5CpgfwHBoC">
@@ -117,7 +143,7 @@
 								</a>
 								<p>
 									<img src="images/papers/image_self.PNG" style="width:247px;height:216px;margin-left:15px;"> 
-									<i>MIDL 2021</i> <br> The segmentation of cardiac structures in Cine Magnetic Resonance imaging (CMR) plays an important role in monitoring ventricular function, and many deep learning solutions have been introduced that successfully automate this task. Yet due to variabilities in the CMR acquisition process, images from different centers or acquisition protocols differ considerably. This causes deep learning models to fail silently. It is therefore crucial to identify out-of-distribution (OOD) samples for which the trained model is unsuitable. For models with a self-supervised proxy task, we propose a simple method to identify OOD samples that does not require adapting the model architecture or access to a separate OOD dataset during training. As the performance of self-supervised tasks can be assessed without ground truth information, it indicates during test time when a sample differs from the training distribution. The proposed method combines a voxel-wise uncertainty estimate with the self-supervision information. Our approach is validated across three CMR datasets and two different proxy tasks. We find that it is more effective at detecting OOD samples than state-of-the-art post-hoc OOD detection and uncertainty estimation approaches.
+									<i>Angenommen für MIDL 2021</i> <br> The segmentation of cardiac structures in Cine Magnetic Resonance imaging (CMR) plays an important role in monitoring ventricular function, and many deep learning solutions have been introduced that successfully automate this task. Yet due to variabilities in the CMR acquisition process, images from different centers or acquisition protocols differ considerably. This causes deep learning models to fail silently. It is therefore crucial to identify out-of-distribution (OOD) samples for which the trained model is unsuitable. For models with a self-supervised proxy task, we propose a simple method to identify OOD samples that does not require adapting the model architecture or access to a separate OOD dataset during training. As the performance of self-supervised tasks can be assessed without ground truth information, it indicates during test time when a sample differs from the training distribution. The proposed method combines a voxel-wise uncertainty estimate with the self-supervision information. Our approach is validated across three CMR datasets and two different proxy tasks. We find that it is more effective at detecting OOD samples than state-of-the-art post-hoc OOD detection and uncertainty estimation approaches.
 								</p>
 								<hr>
 								<a href="https://arxiv.org/pdf/2010.11008.pdf">
